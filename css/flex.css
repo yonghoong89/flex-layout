@@ -1,0 +1,8 @@
+#case1 .container-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#case2 .flex-box {
+  flex: 1;
+}
