@@ -24,8 +24,12 @@ td,
 textarea,
 th,
 ul {
+  padding: 0;
   margin: 0;
-  padding: 0
+}
+
+div {
+  box-sizing: border-box;
 }
 
 body,
@@ -39,56 +43,56 @@ input,
 select,
 table,
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
-  line-height: 18px
+  line-height: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", Arial, sans-serif;
 }
 
 body {
   position: relative;
   padding: 20px;
-  background-color: #fff;
   color: #000;
+  background-color: #fff;
   word-break: break-all;
-  -webkit-text-size-adjust: none
+  -webkit-text-size-adjust: none;
 }
 
 html {
   font-size: 10px;
-  line-height: 15px
+  line-height: 15px;
 }
 
 fieldset,
 img {
-  border: 0
+  border: 0;
 }
 
 ol,
 ul {
-  list-style: none
+  list-style: none;
 }
 
 address,
 em {
-  font-style: normal
+  font-style: normal;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, .1)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
 }
 
 img {
-  vertical-align: top
+  vertical-align: top;
 }
 
 button,
 input {
+  background: 0 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  background: 0 0
 }
 
 .guide-box {
@@ -112,40 +116,37 @@ input {
 .layout-box {
   height: 200px;
   border: 1px solid #727272;
+  margin-top: 5px;
 }
 
 .title {
   padding: 20px;
-  background-color: #6667ab;
-  font-size: 24px;
   color: #fff;
+  font-size: 24px;
+  background-color: #6667ab;
 }
 
 .case-title {
-  margin-top: 20px;
-  font-size: 18px;
   font-weight: bold;
-}
-
-.layout-box {
-  margin-top: 5px;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 .container-box {
-  background-color: #333;
+  padding: 10px;
   color: #fff;
   font-weight: normal;
+  background-color: #333;
 }
 
-.container-box:before {
-  content: 'container';
+.container-box>div {
+  padding: 10px;
 }
-
 
 .flex-box {
-  background-color: #6667ab;
   color: #fff;
   font-weight: normal;
+  background-color: #6667ab;
 }
 
 .flex-box:before {
@@ -164,21 +165,12 @@ input {
   content: 'dummy-box';
 }
 
-.textarea {
+.pre {
   display: block;
   width: 100%;
-  height: 100px;
-  margin-top: 5px;
   border: 1px solid #ccc;
+  font-size: 12px;
+  margin-top: 5px;
   resize: none;
-}
-
-#case1 .container-box {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-#case1 .flex-box {
-  flex: 1;
+  outline: none;
 }

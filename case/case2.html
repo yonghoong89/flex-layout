@@ -1,9 +1,10 @@
-<section id="case1">
-  <h2 class="case-title">레이아웃 1 - 스크롤 없는 100% 레이아웃</h2>
+<section id="case2">
+  <h2 class="case-title">레이아웃 2 - 내비게이션 영역</h2>
   <div class="layout-box">
     <div class="container-box">
-      <div class="dummy-box"></div>
       <div class="flex-box"></div>
+      <div class="flex-box"></div>
+      <div class="flex-box right-box">, right-box</div>
     </div>
   </div>
   <div class="code-box">
@@ -11,11 +12,12 @@
     <pre class="pre">
       .container-box {
         display: flex;
-        flex-direction: column;
-        height: 100%;
       }
-      .flex-box {
-        flex: 1;
+      .flex-box{
+        flex: none;
+      }
+      .right-box{
+        margin-left: auto;
       }
     </pre>
   </div>

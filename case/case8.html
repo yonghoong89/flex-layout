@@ -1,0 +1,28 @@
+<section id="case8">
+  <h2 class="case-title">레이아웃 8 - 위아래로 흐르는 목록</h2>
+  <div class="layout-box">
+    <div class="container-box">
+      <div class="flex-box"></div>
+      <div class="flex-box"></div>
+      <div class="flex-box"></div>
+    </div>
+  </div>
+  <div class="code-box">
+    <h3 class="code-title">코드</h3>
+    <pre class="pre">
+      .container-box{
+        display: inline-flex;
+        max-width: 100%;
+      }
+      .flex-box{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .dummy-box span{
+        display:block;/*부모요소(dummy-box)에 width값을 주면 넓이값이 고정으로 적용되지 않음*/
+        width: 100px;
+      }
+    </pre>
+  </div>
+</section>

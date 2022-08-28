@@ -1,0 +1,28 @@
+<section id="case6">
+  <h2 class="case-title">레이아웃 6 - 유동 너비 박스</h2>
+  <div class="layout-box">
+    <div class="container-box">
+      <div class="flex-box">1</div>
+      <div class="flex-box">22</div>
+      <div class="flex-box">3333</div>
+      <button type="button" class="button">button</button>
+    </div>
+  </div>
+  <div class="code-box">
+    <h3 class="code-title">코드</h3>
+    <pre class="pre">
+      .container-box{
+        display: flex;
+      }
+      .flex-box{
+        overflow: hidden;/* 한줄 말줄임 */
+        text-overflow: ellipsis;/* 한줄 말줄임 */
+        white-space: nowrap;/* 한줄 말줄임 */
+      }
+      .button{
+        flex: none; /* 크기 컨테이너의 영향 x */
+        margin-left: auto; /*오른쪽 정렬*/
+      }
+    </pre>
+  </div>
+</section>

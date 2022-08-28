@@ -1,8 +1,103 @@
 #case1 .container-box {
   display: flex;
-  flex-direction: column;
   height: 100%;
+  flex-direction: column;
 }
-#case2 .flex-box {
+
+#case1 .flex-box {
   flex: 1;
+}
+
+#case2 .container-box {
+  display: flex;
+}
+
+#case2 .flex-box {
+  flex: none;
+}
+
+#case2 .right-box {
+  margin-left: auto;
+}
+
+#case3 .container-box {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+#case3 .flex-box {
+  margin-top: auto;
+}
+
+#case4 .container-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+#case5 .container-box {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+#case6 .container-box {
+  display: flex;
+}
+
+#case6 .flex-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#case6 .button {
+  padding: 0 10px;
+  border: 0 none;
+  flex: none;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+#case7 .container-box {
+  display: inline-flex;
+  max-width: 100%;
+}
+
+#case7 .flex-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#case7 .dummy-box span {
+  display: block;
+  width: 100px;
+}
+
+#case8 .container-box {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+#case9 .container-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#case9 .flex-box {
+  display: flex;
+  flex-basis: 33.3%;
+  flex-direction: column;
+}
+
+#case9 .thumb {
+  width: 100%;
+  height: 100%;
+  flex: auto;
 }
