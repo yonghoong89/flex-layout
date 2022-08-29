@@ -79,7 +79,6 @@
 #case8 .container-box {
   display: flex;
   height: 100%;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;

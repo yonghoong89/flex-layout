@@ -23,7 +23,9 @@ table,
 td,
 textarea,
 th,
-ul {
+ul,
+pre,
+code {
   padding: 0;
   margin: 0;
 }
@@ -99,34 +101,43 @@ input {
   margin-top: 20px;
 }
 
-.container-color {
+.guide-box .container-color {
   display: inline-block;
   padding: 0 10px;
   color: #fff;
   background-color: #333;
 }
 
-.item-color {
+.guide-box .item-color {
   display: inline-block;
   padding: 0 10px;
   color: #fff;
   background-color: #6667ab;
 }
 
-.layout-box {
-  height: 200px;
-  border: 1px solid #727272;
-  margin-top: 5px;
-}
-
-.title {
+.main-title {
   padding: 20px;
+  margin-bottom:10px;
   color: #fff;
   font-size: 24px;
   background-color: #6667ab;
 }
 
-.case-title {
+.case-section .layout-box {
+  height: 200px;
+  border: 1px solid #727272;
+  margin-top: 5px;
+}
+
+#case2 .layout-box,
+#case4 .layout-box,
+#case5 .layout-box,
+#case6 .layout-box,
+#case7 .layout-box {
+  height: auto;
+}
+
+.case-section .case-title {
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
@@ -139,33 +150,33 @@ input {
   background-color: #333;
 }
 
-.container-box>div {
+.case-section .container-box>div {
   padding: 10px;
 }
 
-.flex-box {
+.case-section .flex-box {
   color: #fff;
   font-weight: normal;
   background-color: #6667ab;
 }
 
-.flex-box:before {
+.case-section .flex-box:before {
   content: 'flex-box';
 }
 
-.code-box {
+.case-section .code-box {
   margin-top: 5px;
 }
 
-.dummy-box {
+.case-section .dummy-box {
   background-color: #ccc;
 }
 
-.dummy-box:before {
+.case-section .dummy-box:before {
   content: 'dummy-box';
 }
 
-.pre {
+.case-section .pre {
   display: block;
   width: 100%;
   border: 1px solid #ccc;

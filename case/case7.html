@@ -1,4 +1,4 @@
-<section id="case7">
+<section class="case-section" id="case7">
   <h2 class="case-title">레이아웃 7 - 말줄임과 옆 요소(버튼,아이콘) 고정크기</h2>
   <div class="layout-box">
     <div class="container-box">
@@ -10,14 +10,17 @@
   <div class="code-box">
     <h3 class="code-title">코드</h3>
     <pre class="pre">
+<code class="language-css">
       .container-box{
         display: inline-flex;
         max-width: 100%;
       }
       .dummy-box span{
-        display:block;/*부모요소(dummy-box)에 width값을 주어도 고정으로 적용되지 않음*/
+        display:block;
+        /*부모요소(dummy-box)에 width값을 주어도 고정으로 적용되지 않음*/
         width: 100px;
       }
-    </pre>
+    </code>
+</pre>
   </div>
 </section>
